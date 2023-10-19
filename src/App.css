@@ -1,0 +1,47 @@
+.time {
+  border: 1px solid green;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.time:hover {
+  background-color: rgb(68, 150, 68);
+}
+
+.wallet {
+  border: 1px solid green;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin: 20px
+}
+
+.wallet:hover {
+  background-color: rgb(71, 138, 71);
+}
+
+.character {
+  border: 1px solid green;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+}
+
+.character:hover {
+  background-color: rgb(14, 128, 14);
+}
+
+.Number {
+  border: 1px solid green;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+
+.Number:hover {
+  background-color: rgb(3, 77, 3);
+
+}

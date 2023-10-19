@@ -4,7 +4,7 @@ import WalletComponent from './components/WalletComponent'
 import styled from 'styled-components'
 import { useState, useEffect } from 'react'
 import CharacterFrequency from './CharacterFrequency'
-import NumberPairs from './NumberPairs'
+import NumberPairs from './NumberPairs' 
 
 const AppContainer = styled.div`
   background-color: ${({ bgColor }) => bgColor};

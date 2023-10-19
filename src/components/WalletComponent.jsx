@@ -25,6 +25,6 @@ const WalletComponent = () => {
       <p>Balance: {balance} ETH</p>
     </div>
   )
-}
+} 
 
 export default WalletComponent

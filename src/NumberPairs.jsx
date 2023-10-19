@@ -31,7 +31,7 @@ const NumberPairs = ({ numbers, target }) => {
         ))}
       </ul>
     </div>
-  )
+  ) 
 }
 
 export default NumberPairs

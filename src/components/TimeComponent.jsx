@@ -10,7 +10,7 @@ const TimeComponent = () => {
       setClickCount(clickCount + 1);
       setTime(new Date());
       console.log('Button clicked:', clickCount);
-    };
+    }; 
 
   return (
     <div className="time">

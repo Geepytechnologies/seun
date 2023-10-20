@@ -1,47 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .time {
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 20px;
   width: 300px;
   height: 200px;
   text-align: center;
   margin: 20px;
+  color: rgb(70, 68, 68);
+  font-family: "Montserrat", sans-serif;
 }
 
 .time:hover {
-  background-color: rgb(68, 150, 68);
+  transform: scale(1.02);
 }
 
 .wallet {
-  border: 1px solid green;
-  width: 300px;
-  height: 200px; 
-  text-align: center;
-  margin: 20px
-}
-
-.wallet:hover {
-  background-color: rgb(71, 138, 71);
-}
-
-.character {
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 20px;
   width: 300px;
   height: 200px;
   text-align: center;
   margin: 20px;
+  color: rgb(70, 68, 68);
+  font-family: "Montserrat", sans-serif;
+  word-break: break-all;
+}
+
+.wallet:hover {
+  transform: scale(1.02);
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin: 20px;
+  color: rgb(70, 68, 68);
+  font-family: "Montserrat", sans-serif;
+  word-break: break-all;
 }
 
 .character:hover {
-  background-color: rgb(14, 128, 14);
+  transform: scale(1.02);
 }
 
 .Number {
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid white;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 20px;
   width: 300px;
-  height: 150px;
+  height: 200px;
   text-align: center;
+  margin: 20px;
+  color: rgb(70, 68, 68);
+  font-family: "Montserrat", sans-serif;
+  word-break: break-all;
 }
 
 .Number:hover {
-  background-color: rgb(3, 77, 3);
-
+  transform: scale(1.02);
+}
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+.headercontainer {
+  display: flex;
+  background-color: teal;
+  height: 90px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+ul li {
+  list-style-type: none;
 }

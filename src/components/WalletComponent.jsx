@@ -1,30 +1,27 @@
 import React from 'react'
-import Web3 from 'web3';
 import { useState, useEffect } from 'react';
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import "@rainbow-me/rainbowkit/styles.css";
+import { useAccount, useBalance } from 'wagmi';
 
 const WalletComponent = () => {
-    const [account, setAccount] = useState('');
+  const [account, setAccount] = useState('');
   const [balance, setBalance] = useState(0);
+  const { address, isConnecting, isDisconnected } = useAccount()
+  const { data, isError, isLoading } = useBalance({
+    address: address,
+  })
 
-  useEffect(() => {
-    async function loadBlockchainData() {
-      if (window.ethereum) {
-        const web3 = new Web3(window.ethereum);
-        const accounts = await web3.eth.getAccounts();
-        setAccount(accounts[0]);
-        const balance = await web3.eth.getBalance(accounts[0]);
-        setBalance(web3.utils.fromWei(balance, 'ether'));
-      }
-    }
-    loadBlockchainData();
-  }, []);
   return (
     <div className="wallet">
+      <div className="">
+        <ConnectButton label="Connect" />
+      </div>
       <h2>Wallet Information</h2>
-      <p>Public Address: {0x52e4cF152D4b47CA63A4DE48aa83AcCC2cb17D4c}</p>
-      <p>Balance: {balance} ETH</p>
+      <p className='address'>Public Address: {isConnecting ? "" : address}</p>
+      <p>Balance: {data?.formatted} {data?.symbol}</p>
     </div>
   )
-} 
+}
 
 export default WalletComponent
